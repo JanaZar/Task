@@ -38,3 +38,10 @@ print(f"Female count: {len(female_grade_list)}")
 print(f"Female grade average: {sum(female_grade_list) / len(female_grade_list)}")
 print(f"Male count: {len(male_grade_list)}")
 print(f"Male grade average: {sum(male_grade_list) / len(male_grade_list)}")
+
+majors_list = []
+
+for i in data['Students']:
+    if i['Major'] not in majors_list:
+        majors_list.append(i['Major'])
+print(majors_list)       
